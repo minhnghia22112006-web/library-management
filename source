@@ -104,3 +104,27 @@ def return_book():
 
     except FileNotFoundError:
         print("Chưa có dữ liệu!")
+def main():
+    init_file()
+
+    while True:
+        print("\n===== MENU =====")
+        print("1. Xem sách")
+        print("2. Mượn sách")
+        print("3. Trả sách")
+        print("0. Thoát")
+
+        choice = input("Chọn: ")
+
+        if choice == "1":
+            view_books()
+        elif choice == "2":
+            issue_book()
+        elif choice == "3":
+            return_book()
+        elif choice == "0":
+            break
+        else:
+            print("Sai lựa chọn!")
+
+main()
