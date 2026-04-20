@@ -1,1 +1,101 @@
+def view_books():
+    try:
+        with open("library.txt", "r", encoding="utf-8") as f:
+            books = f.readlines()
 
+        print("\n===== DANH SÁCH SÁCH =====")
+        for book in books:
+            parts = book.strip().split(",")
+            if len(parts) == 3:
+                title, author, status = [x.strip() for x in parts]
+                print(f"Tên: {title} | Tác giả: {author} | Trạng thái: {status}")
+        print("==========================\n")
+
+    except FileNotFoundError:
+        print("Chưa có dữ liệu!")
+
+def issue_book():
+    title_issue = input("Nhập tên sách muốn mượn: ").strip().lower()
+
+    try:
+        with open("library.txt", "r", encoding="utf-8") as f:
+            books = f.readlines()
+
+        new_books = []
+        found = False
+        issued_already = False
+
+        for book in books:
+            parts = book.strip().split(",")
+
+            if len(parts) != 3:
+                new_books.append(book)
+                continue
+
+            title, author, status = [x.strip() for x in parts]
+
+            if title.lower() == title_issue:
+                if status == "Available":
+                    new_books.append(f"{title},{author},Issued\n")
+                    found = True
+                else:
+                    new_books.append(book)
+                    issued_already = True
+            else:
+                new_books.append(book)
+
+        with open("library.txt", "w", encoding="utf-8") as f:
+            f.writelines(new_books)
+
+        if found:
+            print("Mượn sách thành công!")
+        elif issued_already:
+            print("Sách đã được mượn!")
+        else:
+            print("Không tìm thấy sách!")
+
+    except FileNotFoundError:
+        print("Chưa có dữ liệu!")
+
+def return_book():
+    title_return = input("Nhập tên sách muốn trả: ").strip().lower()
+
+    try:
+        with open("library.txt", "r", encoding="utf-8") as f:
+            books = f.readlines()
+
+        new_books = []
+        found = False
+        not_issued = False
+
+        for book in books:
+            parts = book.strip().split(",")
+
+            if len(parts) != 3:
+                new_books.append(book)
+                continue
+
+            title, author, status = [x.strip() for x in parts]
+
+            if title.lower() == title_return:
+                if status == "Issued":
+                    new_books.append(f"{title},{author},Available\n")
+                    found = True
+                else:
+                    new_books.append(book)
+                    not_issued = True
+            else:
+                new_books.append(book)
+
+        with open("library.txt", "w", encoding="utf-8") as f:
+            f.writelines(new_books)
+
+        if found:
+            print("Trả sách thành công!")
+        elif not_issued:
+            print("Sách chưa được mượn!")
+        else:
+            print("Không tìm thấy sách!")
+
+    except FileNotFoundError:
+        print("Chưa có dữ liệu!")
