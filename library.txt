@@ -1,1 +1,50 @@
-
+Doraemon,Fujiko,Available
+One Piece,Eiichiro Oda,Issued
+Naruto,Masashi Kishimoto,Available
+Dragon Ball,Akira Toriyama,Issued
+Attack on Titan,Hajime Isayama,Available
+Death Note,Tsugumi Ohba,Issued
+Bleach,Tite Kubo,Available
+Fullmetal Alchemist,Hiromu Arakawa,Issued
+Tokyo Ghoul,Sui Ishida,Available
+Jujutsu Kaisen,Gege Akutami,Issued
+Chainsaw Man,Tatsuki Fujimoto,Available
+Demon Slayer,Koyoharu Gotouge,Issued
+Black Clover,Yuki Tabata,Available
+My Hero Academia,Kohei Horikoshi,Issued
+Spy x Family,Tatsuya Endo,Available
+Haikyuu,Haruki Furudate,Issued
+Blue Lock,Muneyuki Kaneshiro,Available
+Slam Dunk,Takehiko Inoue,Issued
+Vagabond,Takehiko Inoue,Available
+Berserk,Kentaro Miura,Issued
+The Hobbit,J.R.R. Tolkien,Available
+The Lord of the Rings,J.R.R. Tolkien,Issued
+Harry Potter,J.K. Rowling,Available
+Fantastic Beasts,J.K. Rowling,Issued
+The Alchemist,Paulo Coelho,Available
+Eleven Minutes,Paulo Coelho,Issued
+To Kill a Mockingbird,Harper Lee,Available
+1984,George Orwell,Issued
+Animal Farm,George Orwell,Available
+The Great Gatsby,F. Scott Fitzgerald,Issued
+Moby Dick,Herman Melville,Available
+War and Peace,Leo Tolstoy,Issued
+Anna Karenina,Leo Tolstoy,Available
+Crime and Punishment,Fyodor Dostoevsky,Issued
+The Brothers Karamazov,Fyodor Dostoevsky,Available
+Pride and Prejudice,Jane Austen,Issued
+Emma,Jane Austen,Available
+The Catcher in the Rye,J.D. Salinger,Issued
+The Da Vinci Code,Dan Brown,Available
+Angels and Demons,Dan Brown,Issued
+Inferno,Dan Brown,Available
+Digital Fortress,Dan Brown,Issued
+Clean Code,Robert C. Martin,Available
+The Pragmatic Programmer,Andrew Hunt,Issued
+Design Patterns,Erich Gamma,Available
+Refactoring,Martin Fowler,Issued
+Introduction to Algorithms,Thomas H. Cormen,Available
+Artificial Intelligence,Stuart Russell,Issued
+Machine Learning,Tom M. Mitchell,Available
+Deep Learning,Ian Goodfellow,Issued
